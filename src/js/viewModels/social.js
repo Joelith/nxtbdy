@@ -8,7 +8,11 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'socket.io', 'appController', 'ojs/o
     self.history = [];
     self.profile_history = [];
 
+    self.bus = ko.observable();
 		self.loadRoom = function (room_id) {
+      self.bus({
+        name : room_id
+      });
 			//console.log('loading room', room_id, self.serverurl);
 			self.history = [];
       if (!self.socket) {

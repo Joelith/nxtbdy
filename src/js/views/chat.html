@@ -1,5 +1,5 @@
 <div id="chat_panel" class="oj-flex scroll-wrapper tab-content scrollbar-wrapper wrapper scrollbar-outer">
-	<ul id="listview" aria-label="list using collection"
+	<ul id="listview" style="max-height: 79vh; overflow:auto;" aria-label="list using collection"
 			data-bind="ojComponent: {
 			component: 'ojListView', 
 			data: dataSource, 
@@ -17,7 +17,7 @@
      data-bind="ojComponent: {component: 'ojInputText', value: msg, optionChange: msgSubmit}"/>
     <span class="input-group-btn">
     	<button id= "button"
-        data-bind="click: buttonClick, 
+        data-bind="click: msgSubmit, 
                    ojComponent: { component: 'ojButton', label: 'Send' }">
 			</button>
     </span>

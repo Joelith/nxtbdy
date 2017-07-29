@@ -31,13 +31,15 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'socket.io', 'appController', 'ojs/o
   	}
 
   	self.scrollToBottom = function () {
-  		if ($('#chat_panel')[0]) {
-  			$('#chat_panel').animate({
+  		console.log('scrolling');
+  		if ($('#listview')[0]) {
+  			$('#listview').animate({
         scrollTop: $('#chat_panel')[0].scrollHeight}, 2000);
       }
 		}
 
     self.buttonClick = function (data, event) {
+    	console.log('button click?', self.msg());
     	self.socket.emit('message', {
     		message: self.msg(),
     		from_name: app.user.username,

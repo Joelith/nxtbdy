@@ -33,7 +33,7 @@ img.profile-photo-sm {
 }
 
 .oj-tabs-panel>div {
-	height: 85vh;
+	height: 83vh;
 }
 
 .oj-listview {
@@ -48,7 +48,7 @@ img.profile-photo-sm {
 /* Signin page style */
 .demo-signin-bg {
   height: 100vh;
-  background-image: url("images/MobilePT.jpg");
+  background-image: url("images/mobilept.jpg");
   background-size: cover;
   background-position-y: 10%; }
 
