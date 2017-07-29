@@ -1,4 +1,4 @@
-define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'mbe', 'ojs/ojrouter', 'ojs/ojinputtext', 'ojs/ojbutton', 'ojs/ojcheckboxset'], function(oj, ko, $, app, mbe) {
+define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojrouter', 'ojs/ojinputtext', 'ojs/ojbutton', 'ojs/ojcheckboxset'], function(oj, ko, $, app) {
 	function SigninViewModel() {
 		var self = this;
 

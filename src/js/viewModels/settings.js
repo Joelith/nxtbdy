@@ -1,4 +1,4 @@
-define(['ojs/ojcore', 'knockout', 'jquery', 'jfeed', 'ojs/ojlistview', 'ojs/ojcollectiontabledatasource', 'ojs/ojmodel', 'ojs/ojswitch'], function(oj, ko, $, jfeed) {
+define(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojlistview', 'ojs/ojcollectiontabledatasource', 'ojs/ojmodel', 'ojs/ojswitch'], function(oj, ko, $, jfeed) {
   	    
   function SettingsViewModel() {
  		var self = this;
