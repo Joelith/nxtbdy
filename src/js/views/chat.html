@@ -28,11 +28,14 @@
 
 <script type="text/html" id="list_template">
 
-	<li class="left">
-		<div class="oj-flex">
-			<div style="width: 50px;"><img data-bind="attr: { src: 'css/images/user_' + from_id + '.png'}" class="profile-photo-sm t"/></div>
-			<div class="oj-flex-item"><em data-bind="text: from_name"></em>: <span data-bind="text: message"></span></div>
+	<li data-bind="attr: {class: 'chat_' + from_id}">
+    <div class="oj-flex-bar">
+			<div class="oj-flex-bar-start oj-sm-2">
+				<div style="width: 50px;"><img data-bind="attr: { src: 'css/images/user_' + from_id + '.png'}" class="profile-photo-sm t"/></div>
+			</div>
+			<div class="oj-flex-bar-middle oj-sm-10">
+				<p><em data-bind="text: from_name"></em>: <span data-bind="text: message"></span></p>
+			</div>
 		</div>
-			
 	</li>
 </script>

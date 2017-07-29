@@ -1,4 +1,4 @@
-define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojlistview', 'ojs/ojcollectiontabledatasource', 'ojs/ojmodel'], function(oj, ko, $, app) {
+define(['ojs/ojcore', 'knockout', 'jquery', 'appController', 'ojs/ojlistview', 'ojs/ojcollectiontabledatasource', 'ojs/ojmodel', 'ojs/ojgauge'], function(oj, ko, $, app) {
   	    
   function BadgesViewModel() {
  		var self = this;

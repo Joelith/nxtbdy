@@ -14,14 +14,27 @@
 </div>
 
 <script type="text/html" id="badges_template">
-	<li class="oj-flex-item oj-sm-12">
-		<div>
-			<div class="oj-flex oj-flex-items-pad">
-				<div class="oj-flex-item oj-lg-3 oj-md-2">
-					<strong class="title" data-bind="text: title"></strong>
-					<p data-bind="text: description"></p>
-				</div>
-			</div>
-		</div>
+	<li>
+    <div class="oj-flex-bar">
+  		<div class="oj-flex-bar-start oj-sm-6">
+			 	<div class="oj-flex-item" id="gauge" title="Value: 20<br>Reference Lines: Low 33, Medium 67, High 100" data-bind="ojComponent: {
+			    component: 'ojStatusMeterGauge', 
+			    min: 0, 
+			    max: goal, 
+			    value: progress,  
+			    startAngle: 180,
+		      angleExtent: 180,
+			    orientation: 'circular',
+			    metricLabel: {rendered: 'on'},
+			    plotArea: {rendered: 'on'},
+			    style: { fill: '#0572ce' }
+			    }"
+			    style="align:center; margin-top:5px; margin-bottom:5px; height:50px; width:45%;">
+		    </div>
+		  </div>
+    	<div class="oj-flex-bar-middle oj-sm-4">
+    		<h2 data-bind="text: badge"></h2>
+    	</div>
+    </div>
 	</li>
 </script>
