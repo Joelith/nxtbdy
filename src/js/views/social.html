@@ -1,0 +1,33 @@
+<div id="socialView" style="max-height: 100%" data-bind="ojComponent:{component: 'ojTabs'}">
+	<!-- tab bar -->
+	<ul>
+		<li style="font-size: 2em;"><span class="oj-tabs-tab-icon fa fa-home"></span></li>
+		<li style="font-size: 2em;"><span class="oj-tabs-tab-icon fa fa-users"></span></li>
+		<li style="font-size: 2em;"><span class="oj-tabs-tab-icon fa fa-newspaper-o"></span></li>
+		<li style="font-size: 2em;"><span class="oj-tabs-tab-icon fa fa-trophy"></span></li>
+		<li style="font-size: 2em;"><span class="oj-tabs-tab-icon fa fa-gear"></span></li>
+		<!--li id="tab4"><span>Report</span></li>-->
+	</ul>
+	<div>
+		<div data-bind="ojModule: 'chat'">
+		</div>
+	</div>
+
+	<div>
+		<div data-bind="ojModule: 'users'">
+		</div>
+	</div>
+
+	<div>
+		<div data-bind="ojModule: 'news'">
+		</div>
+	</div>
+	<div>
+		<div data-bind="ojModule: 'badges'">
+		</div>
+	</div>
+		<div>
+		<div data-bind="ojModule: 'settings'">
+		</div>
+	</div>
+</div>

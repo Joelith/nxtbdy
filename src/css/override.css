@@ -5,3 +5,37 @@
     Description:
         This is where any of your application specific styles should be included
 */
+.scrollbar-wrapper.tab-content {
+    overflow-y: auto;
+}
+
+img.profile-photo-sm {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.pull-right {
+    float: right!important;
+}
+.pull-left {
+    float: left!important;
+}
+.chat-room .chat-body ul.chat-message li.left .chat-item {
+    background: rgba(141,198,63, .1);
+    margin-left: 50px;
+    padding: 5px 10px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.oj-web-applayout-header > div:first-child::before {
+	min-height: 0;
+}
+
+.oj-tabs-panel>div {
+	height: 85vh;
+}
+
+.oj-listview {
+	width: 100%;
+}

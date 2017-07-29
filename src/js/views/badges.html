@@ -1,0 +1,27 @@
+<div class="oj-hybrid-padding">
+	<div>
+		<ul id="badgesListView" aria-label="list using collection" style="height:100%" 
+				data-bind="ojComponent: {
+				component: 'ojListView', 
+				data: dataSource, 
+				item: {
+					template: 'badges_template'
+				}, 
+				selectionMode: 'none'
+				}">
+		</ul>
+	</div>
+</div>
+
+<script type="text/html" id="badges_template">
+	<li class="oj-flex-item oj-sm-12">
+		<div>
+			<div class="oj-flex oj-flex-items-pad">
+				<div class="oj-flex-item oj-lg-3 oj-md-2">
+					<strong class="title" data-bind="text: title"></strong>
+					<p data-bind="text: description"></p>
+				</div>
+			</div>
+		</div>
+	</li>
+</script>

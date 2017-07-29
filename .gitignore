@@ -11,4 +11,8 @@ hybrid/plugins/*
 !hybrid/plugins/fetch.json
 
 .DS_Store
-Thumbs.db
+Thumbs.dbgh-pages/
+
+*.zip
+
+src/js/mbe.js

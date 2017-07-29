@@ -38,6 +38,14 @@ module.exports = function (grunt) {
             cwd: 'node_modules/socket.io-client/dist',
             src: ['*'],
             dest: 'web/js/libs/socket.io'
+        },{
+            cwd: 'node_modules/font-awesome/css',
+            src: ['*'],
+            dest: 'web/css/font-awesome'
+        },{
+            cwd: 'node_modules/font-awesome/fonts',
+            src: ['*'],
+            dest: 'web/css/fonts'
         }]
     },
 

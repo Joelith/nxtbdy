@@ -1,0 +1,7 @@
+{
+    "memory": "2G",
+    "instances": "1",
+    "environment": {
+      "backend_url":"https://NXTBDYBackend-gse00011381.apaas.us6.oraclecloud.com",
+    }
+}

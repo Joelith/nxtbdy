@@ -1,1 +1,38 @@
-Chat
+<div id="chat_panel" class="oj-flex scroll-wrapper tab-content scrollbar-wrapper wrapper scrollbar-outer">
+	<ul id="listview" aria-label="list using collection"
+			data-bind="ojComponent: {
+			component: 'ojListView', 
+			data: dataSource, 
+			item: {
+				template: 'list_template'
+			}, 
+			selectionMode: 'none'
+			}">
+	</ul>
+</div>
+<div class="send-message" style="position: absolute; bottom: 0; width: 100%">
+  <div class="input-group">
+  	<input id="msg_input" class="form-control" placeholder="Message..."
+     type="text"
+     data-bind="ojComponent: {component: 'ojInputText', value: msg, optionChange: msgSubmit}"/>
+    <span class="input-group-btn">
+    	<button id= "button"
+        data-bind="click: buttonClick, 
+                   ojComponent: { component: 'ojButton', label: 'Send' }">
+			</button>
+    </span>
+  </div>
+</div>
+
+
+
+<script type="text/html" id="list_template">
+
+	<li class="left">
+		<div class="oj-flex">
+			<div style="width: 50px;"><img data-bind="attr: { src: 'css/images/user' + from_id + '.png'}" class="profile-photo-sm t"/></div>
+			<div class="oj-flex-item"><em data-bind="text: from_name"></em>: <span data-bind="text: message"></span></div>
+		</div>
+			
+	</li>
+</script>
