@@ -40,8 +40,8 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'socket.io', 'appController', 'ojs/o
     self.buttonClick = function (data, event) {
     	self.socket.emit('message', {
     		message: self.msg(),
-    		from_name: 'Joel Nation',
-    		from_id: 1
+    		from_name: app.user.username,
+    		from_id: app.user.username
     	});
     	self.msg('');
     }
